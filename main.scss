@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	min-width: 100vw;
+	min-height: 100vw;
+}
+#logo {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#logo-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
