@@ -14399,6 +14399,9 @@ rect.forEach(function (path) {
 var tl = _gsap.gsap.timeline();
 
 tl.delay(2);
+tl.set('.intro-container__cover', {
+  display: 'none'
+});
 tl.staggerTo('#logo rect', 1, {
   strokeDashoffset: 0
 });
@@ -14417,6 +14420,19 @@ tl.to(rect, {
   autoAlpha: 0,
   duration: 1
 }, '-=1');
+tl.to('.intro-container__left', {
+  x: '-100%',
+  duration: 0.9,
+  ease: 'expo.out'
+});
+tl.to('.intro-container__right', {
+  x: '100%',
+  duration: 0.9,
+  ease: 'expo.out'
+}, '-=0.9');
+tl.set('.intro-container', {
+  display: 'none'
+});
 },{"gsap":"node_modules/gsap/index.js","gsap/all":"node_modules/gsap/all.js"}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -14445,7 +14461,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36993" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43885" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
