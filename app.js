@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/all';
+import initCanvas from './js/background';
 
 const paths = document.querySelectorAll('path');
 const rect = document.querySelectorAll('rect');
@@ -40,3 +41,5 @@ tl.to(
 	'-=0.9'
 );
 tl.set('.intro-container', { display: 'none' });
+tl.to('.txt', { opacity: 1, duration: 0.3 });
+initCanvas();

@@ -47,6 +47,12 @@ body {
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
+  background: #0052d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body::-webkit-scrollbar {
@@ -95,6 +101,18 @@ body::-webkit-scrollbar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.txt {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  color: white;
+  z-index: 5;
+  font-size: 3rem;
+  opacity: 0;
+  width: 75%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
