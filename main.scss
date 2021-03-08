@@ -1,14 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:wght@100;400;800&display=swap');
+@import './scss/nav';
 @import './scss/base';
 @import './scss/intro';
-@import './scss/section1';
-.txt {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	color: white;
-	z-index: 5;
-	font-size: 3rem;
-	opacity: 0;
-	width: 75%;
-	transform: translateX(-50%);
-}
+@import './scss/main';
